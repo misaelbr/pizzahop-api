@@ -1,0 +1,41 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1709045643671,
+      "tag": "0000_stiff_mongu",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1709045792099,
+      "tag": "0001_groovy_gladiator",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1709045931899,
+      "tag": "0002_marvelous_christian_walker",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1709045983104,
+      "tag": "0003_brown_landau",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1709046092487,
+      "tag": "0004_concerned_sharon_carter",
+      "breakpoints": true
+    }
+  ]
+}
