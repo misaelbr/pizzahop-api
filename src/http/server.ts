@@ -15,6 +15,24 @@ const app = new Elysia()
   .use(signOut)
   .use(getProfile)
   .use(getManagedRestaurant)
+  .onError(({ error, code, set }) => {
+    switch (code) {
+      case 'VALIDATION': {
+        set.status = error.status
+        return error.toResponse()
+      }
+      case 'NOT_FOUND': {
+        set.status = error.status
+        return error.message
+      }
+      default: {
+        set.status = 500
+        console.error(error)
+
+        return new Response(null, { status: 500 })
+      }
+    }
+  })
 
 app.listen(3333, () => {
   console.log(chalk.bgRed.black('🔥 HTTP Server running on port 3333'))
