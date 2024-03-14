@@ -43,6 +43,13 @@
       "when": 1709057018621,
       "tag": "0005_dear_black_panther",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1710429398495,
+      "tag": "0006_chief_nicolaos",
+      "breakpoints": true
     }
   ]
 }
