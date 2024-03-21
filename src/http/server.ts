@@ -1,6 +1,7 @@
 import chalk from 'chalk'
 import { Elysia } from 'elysia'
 
+import { approveOrder } from './routes/approve-order'
 import { authenticateFromLink } from './routes/authenticate-from-link'
 import { getManagedRestaurant } from './routes/get-managed-restaurant'
 import { getOrderDetails } from './routes/get-orders-details'
@@ -17,6 +18,7 @@ const app = new Elysia()
   .use(getProfile)
   .use(getManagedRestaurant)
   .use(getOrderDetails)
+  .use(approveOrder)
   .onError(({ error, code, set }) => {
     switch (code) {
       case 'VALIDATION': {
