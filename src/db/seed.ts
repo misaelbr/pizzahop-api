@@ -123,7 +123,7 @@ type OrderInsert = typeof orders.$inferInsert
 const orderItemsToInsert: OrderItemsInsert[] = []
 const ordersToInsert: OrderInsert[] = []
 
-for (let i = 0; i <= 200; i++) {
+for (let i = 0; i < 200; i++) {
   const orderId = createId()
 
   const orderProducts = faker.helpers.arrayElements(availableProducts, {
